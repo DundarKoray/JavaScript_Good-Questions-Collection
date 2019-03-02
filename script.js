@@ -31,3 +31,6 @@ Mark and John are trying to compare their BMI (Body Mass Index), which is calcul
  let bmiMark = bmiCalc(1.69, 78);
 
  console.log(bmiJohn, bmiMark) // 24.194608809993426 27.309968138370508
+
+ bmiMarkHigher = bmiMark > bmiJohn;
+ console.log(`Is Mark's BMI higher than Johns? ${bmiMarkHigher}`)
