@@ -89,3 +89,6 @@ if (john.calculateBMI() > mark.calculateBMI()) {
    console.log('They have the same BMI.')
 }
 
+//---------------------------------------------------------
+
+
