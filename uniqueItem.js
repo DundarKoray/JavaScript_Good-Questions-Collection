@@ -2,6 +2,7 @@
 
 // Array: function should return only "Simon" and "Dean"
 const names = ["Hari", "Simon", "Dean", "Koray", "Hari", "Koray"]
+const names1 = ["Hari", "Simon", "Phuc", "Koray"]
 
 // String: function should return true for unique_x and false for notUnique_y once it is passed as a parameter.
 let unique_x = "abcde"
@@ -58,7 +59,17 @@ console.log(findUniqueItems(names))
 // Object version
 
 
-//Array version b
+
+//
+function uniqueItemsWithNewSet(arr) {
+    return new Set(arr).size === arr.length
+}
+
+console.log(uniqueItemsWithNewSet(names)) // false
+console.log(uniqueItemsWithNewSet(names1)) // true
+
+
+//new set
 function findUniqueItemsWithNewSet(arr) {
     let newReducedArray = new Set(arr)
     return newReducedArray
