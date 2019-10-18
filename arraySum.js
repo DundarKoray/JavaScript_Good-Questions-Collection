@@ -31,6 +31,6 @@ function arraySum(arr) {
     }
 }
 
-console.log(arraySum(array1))
-console.log(arraySum(array2))
+console.log(arraySum(array1)) // true
+console.log(arraySum(array2)) // false
 

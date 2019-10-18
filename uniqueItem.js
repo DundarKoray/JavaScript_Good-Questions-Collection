@@ -8,6 +8,15 @@ let unique_x = "abcde"
 let notUnique_y = "gbcdabcdefb"
 
 
+// Create a function where it removes duplicated items
+const studentsID = ["001", "001", "002", "003", "003", "004"]
+
+
+
+
+
+
+
 
 //String version
 function isItAUniqueString(str) {
@@ -32,7 +41,7 @@ console.log(isItAUniqueString(unique_x)) // true
 
 
 
-//Array version
+//Array version a
 function findUniqueItems(arr) {
     let newUniqueArray = []
 
@@ -47,3 +56,12 @@ function findUniqueItems(arr) {
 
 console.log(findUniqueItems(names))
 // Object version
+
+
+//Array version b
+function findUniqueItemsWithNewSet(arr) {
+    let newReducedArray = new Set(arr)
+    return newReducedArray
+}
+
+console.log(findUniqueItemsWithNewSet(studentsID))
